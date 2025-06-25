@@ -1,0 +1,66 @@
+:root {
+  --bg: #fff;
+  --text: #111;
+  --card: #f3f3f3;
+}
+
+body.dark {
+  --bg: #1a1a1a;
+  --text: #eee;
+  --card: #2a2a2a;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s ease all;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form, #filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+#expense-list {
+  list-style: none;
+  padding: 0;
+}
+
+#expense-list li {
+  background: var(--card);
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#summary {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
